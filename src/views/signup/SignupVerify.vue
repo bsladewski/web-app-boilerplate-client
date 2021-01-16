@@ -31,8 +31,8 @@
             class="error-text mt-4"
             show
             variant="danger"
-            v-if="validationError"
-            v-text="validationError"/>
+            v-if="validateError"
+            v-text="validateError"/>
 
         <b-alert
             class="error-text mt-4"
@@ -52,7 +52,7 @@ export default {
 
     data() {
         return {
-            validationError: "",
+            validateError: "",
             verificationFailed: false,
         }
     },
@@ -67,7 +67,7 @@ export default {
     mounted() {
         this.$nextTick(function () {
             if (!this.$route.query.token) {
-                this.validationError = "verification token not found";
+                this.validateError = "verification token not found";
                 this.verificationFailed = true;
                 return;
             }
