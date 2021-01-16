@@ -4,7 +4,7 @@ The web app boilerplate provides the basic structure of a web app that uses Go f
 
 For an example project check out the [Mojito Client Repository](https://github.com/bsladewski/mojito-client).
 
-Feel free to fork, copy, or borrow from this repository and start building!
+Feel free to [fork](https://github.com/bsladewski/web-app-boilerplate-client/fork), copy, or borrow from this repository and start building!
 
 # Dependencies
 
