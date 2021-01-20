@@ -12,7 +12,7 @@ Feel free to [fork](https://github.com/bsladewski/web-app-boilerplate-client/for
 
 This project uses [Node.js](https://nodejs.org/en/docs/guides/getting-started-guide/).
 
-Additional dependencies are managed through [NPM](https://docs.npmjs.com/getting-started).
+Additional dependencies are managed through [Yarn](https://yarnpkg.com/getting-started).
 
 # Usage
 
@@ -20,7 +20,9 @@ Additional dependencies are managed through [NPM](https://docs.npmjs.com/getting
 
 To get started, clone the repository:
 
-`$ git clone https://github.com/bsladewski/web-app-boilerplate-client`
+```
+$ git clone https://github.com/bsladewski/web-app-boilerplate-client
+```
 
 Use `yarn` to install or update project dependencies:
 
