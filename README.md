@@ -1,6 +1,7 @@
 # Web App Boilerplate Client
 
 ![codeql workflow](https://github.com/bsladewski/web-app-boilerplate-client/workflows/CodeQL/badge.svg)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/ce392e78389843558c6adfbf930b3c16)](https://www.codacy.com/gh/bsladewski/web-app-boilerplate-client/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=bsladewski/web-app-boilerplate-client&amp;utm_campaign=Badge_Grade)
 
 The web app boilerplate provides the basic structure of a web app that uses Go for the API server and VueJS for the front-end. The purpose of this repository is to speed up the development of prototypes by implementing some of the basic functionality that is common to many different types of web apps. This includes packages for working with the environment, database, application router, etc. as well as functionality for managing user accounts, authentication, and permissions.
 
