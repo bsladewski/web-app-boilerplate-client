@@ -48,7 +48,7 @@ const mutations = {
         state.permissions = new Set();
 
         if (Array.isArray(payload.permissions) && payload.permissions.length) {
-            payload.permissions.forEach(item => {
+            payload.permissions.forEach((item) => {
                 state.permissions.add(item);
             });
 
@@ -125,7 +125,7 @@ const getters = {
                 let permissions = JSON.parse(localStorage.getItem(PERMISSIONS_KEY));
 
                 if (Array.isArray(permissions) && permissions.length) {
-                    permissions.forEach(item => {
+                    permissions.forEach((item) => {
                         state.permissions.add(item);
                     });
                 }
@@ -152,14 +152,14 @@ const actions = {
         commit("setLoading", true);
 
         let promise = axios.post("/login", {
-            email: email,
-            password: password,
+            email,
+            password,
         });
 
-        promise.then(response => {
+        promise.then((response) => {
             commit("setAuth", response.data);
             commit("setLoading", false);
-        }).catch(error => {
+        }).catch((error) => {
             commit("setError", error.response?.data);
             commit("setLoading", false);
         });
@@ -178,7 +178,7 @@ const actions = {
             refresh_token: getters.getRefreshToken(),
         });
 
-        promise.then(response => {
+        promise.then((response) => {
             commit("setAuth", response.data);
             commit("setLoading", false);
         }).catch(() => {
@@ -232,7 +232,7 @@ const actions = {
 
         promise.then(() => {
             commit("setLoading", false);
-        }).catch(error => {
+        }).catch((error) => {
             commit("setError", error.response?.data);
             commit("setLoading", false);
         });
@@ -248,13 +248,13 @@ const actions = {
         commit("setLoading", true);
 
         let promise = axios.post("/signup", {
-            email: email,
-            password: password,
+            email,
+            password,
         });
 
         promise.then(() => {
             commit("setLoading", false);
-        }).catch(error => {
+        }).catch((error) => {
             commit("setError", error.response?.data);
             commit("setLoading", false);
         });
@@ -271,12 +271,12 @@ const actions = {
         commit("setLoading", true);
 
         let promise = axios.post("/signup/verify", {
-            token: token,
+            token,
         });
 
         promise.then(() => {
             commit("setLoading", false);
-        }).catch(error => {
+        }).catch((error) => {
             commit("setError", error.response?.data);
             commit("setLoading", false);
         });
@@ -292,12 +292,12 @@ const actions = {
         commit("setLoading", true);
 
         let promise = axios.post("/recover", {
-            email: email,
+            email,
         });
 
         promise.then(() => {
             commit("setLoading", false);
-        }).catch(error => {
+        }).catch((error) => {
             commit("setError", error.response?.data);
             commit("setLoading", false);
         });
@@ -314,13 +314,13 @@ const actions = {
         commit("setLoading", true);
 
         let promise = axios.post("/recover/reset", {
-            token: token,
-            password: password,
+            token,
+            password,
         });
 
         promise.then(() => {
             commit("setLoading", false);
-        }).catch(error => {
+        }).catch((error) => {
             commit("setError", error.response?.data);
             commit("setLoading", false);
         });

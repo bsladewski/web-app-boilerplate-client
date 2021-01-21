@@ -8,57 +8,57 @@ For an example project check out the [Mojito Client Repository](https://github.c
 
 Feel free to [fork](https://github.com/bsladewski/web-app-boilerplate-client/fork), copy, or borrow from this repository and start building!
 
-# Dependencies
+## Dependencies
 
 This project uses [Node.js](https://nodejs.org/en/docs/guides/getting-started-guide/).
 
 Additional dependencies are managed through [Yarn](https://yarnpkg.com/getting-started).
 
-# Usage
+## Usage
 
-## Installation
+### Installation
 
 To get started, clone the repository:
 
-```
-$ git clone https://github.com/bsladewski/web-app-boilerplate-client
+```sh
+git clone https://github.com/bsladewski/web-app-boilerplate-client
 ```
 
 Use `yarn` to install or update project dependencies:
 
-```
-$ yarn install
-```
-
-```
-$ yarn upgrade
+```sh
+yarn install
 ```
 
-## Running For Development
+```sh
+yarn upgrade
+```
+
+### Running For Development
 
 To compile and run the application for development use the following command:
 
-```
-$ npm run serve
+```sh
+npm run serve
 ```
 
-## Compiling For Production
+### Compiling For Production
 
 To compile and minify project for deployment to production use the following command:
 
+```sh
+yarn build
 ```
-$ npm run build
-```
 
-# Contributing
+## Contributing
 
-1. [Fork it!](https://github.com/bsladewski/web-app-boilerplate-client/fork)
-2. Create your feature branch: `git checkout -b feature/my-new-feature`
-3. Commit your changes: `git commit -am 'Implemented my cool new feature'`
-4. Push to the branch: `git push origin feature/my-new-feature`
-5. Submit a new Pull Request
+1.  [Fork it!](https://github.com/bsladewski/web-app-boilerplate-client/fork)
+2.  Create your feature branch: `git checkout -b feature/my-new-feature`
+3.  Commit your changes: `git commit -am 'Implemented my cool new feature'`
+4.  Push to the branch: `git push origin feature/my-new-feature`
+5.  Submit a new Pull Request
 
-# License
+## License
 
 The MIT License (MIT)
 

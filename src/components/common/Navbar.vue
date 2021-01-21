@@ -42,5 +42,5 @@ export default {
     computed: {
         ...mapGetters(["isLoggedIn"]),
     },
-}
+};
 </script>
